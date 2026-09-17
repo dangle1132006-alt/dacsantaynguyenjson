@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Đặc Sản Tây Nguyên | Sản Phẩm Chất Lượng</title>
+    <meta name="description"
+        content="Danh sách đầy đủ đặc sản Tây Nguyên chính hiệu: Cà phê, Mật ong, Mắc ca, Tiêu Đắk Nông, Bơ sáp Đắk Lắk, Thổ Cẩm.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="brand">
+                <h1 class="brand-title">Đặc Sản Tây Nguyên</h1>
+                <span class="brand-slogan">Tinh hoa núi rừng trong từng sản phẩm</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="products.html" class="active">Sản phẩm</a></li>
+                    <li><a href="product-detail.html">Chi tiết sản phẩm</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h1>Danh Sách Sản Phẩm Đặc Sản</h1>
+            <p>Tổng hợp các nông sản và quà tặng chất lượng nhất đến từ các tỉnh Tây Nguyên.</p>
+        </section>
+
+        <div class="products-layout">
+            <!-- Bộ lọc sidebar -->
+            <aside class="filter-sidebar">
+                <h2>Bộ Lọc Sản Phẩm</h2>
+                <div class="filter-group">
+                    <label for="search-input">Tìm kiếm</label>
+                    <input type="text" id="search-input" placeholder="Nhập tên sản phẩm..." style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                </div>
+                <div class="filter-group">
+                    <label for="category-select">Danh mục</label>
+                    <select id="category-select" style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                        <option value="all">Tất cả danh mục</option>
+                        <option value="Cà phê">Cà phê</option>
+                        <option value="Mật ong">Mật ong</option>
+                        <option value="Hạt dinh dưỡng">Hạt dinh dưỡng</option>
+                        <option value="Gia vị">Gia vị</option>
+                        <option value="Trái cây">Trái cây</option>
+                        <option value="Đồ thủ công">Đồ thủ công</option>
+                        <option value="Rượu">Rượu</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price-select">Khoảng giá</label>
+                    <select id="price-select" style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                        <option value="all">Tất cả giá</option>
+                        <option value="under-150">Dưới 150.000 VNĐ</option>
+                        <option value="150-300">150.000 - 300.000 VNĐ</option>
+                        <option value="over-300">Trên 300.000 VNĐ</option>
+                    </select>
+                </div>
+            </aside>
+
+            <!-- Grid 6 sản phẩm -->
+            <section class="product-grid" id="product-container">
+                <!-- Sản phẩm sẽ được render bằng JavaScript qua API fetch -->
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Dự án Đặc sản Tây Nguyên. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

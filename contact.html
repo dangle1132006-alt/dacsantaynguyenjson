@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ & Đặt Hàng | Đặc Sản Tây Nguyên</title>
+    <meta name="description"
+        content="Gửi yêu cầu tư vấn và đặt hàng đặc sản Tây Nguyên chính gốc. Hỗ trợ khách hàng nhanh chóng 24/7.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="brand">
+                <h1 class="brand-title">Đặc Sản Tây Nguyên</h1>
+                <span class="brand-slogan">Tinh hoa núi rừng trong từng sản phẩm</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="products.html">Sản phẩm</a></li>
+                    <li><a href="product-detail.html">Chi tiết sản phẩm</a></li>
+                    <li><a href="contact.html" class="active">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h1>Liên Hệ & Tư Vấn Đặt Hàng</h1>
+            <p>Hãy gửi thông tin cho chúng tôi, bộ phận tư vấn sẽ hỗ trợ bạn trong thời gian sớm nhất.</p>
+        </section>
+
+        <div class="products-layout">
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="fullname">Họ và tên *</label>
+                    <input type="text" id="fullname" name="fullname" required placeholder="Nguyễn Văn A">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Số điện thoại *</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="0900000000">
+                </div>
+
+                <div class="form-group">
+                    <label for="product">Sản phẩm quan tâm</label>
+                    <select id="product" name="product">
+                        <option value="">-- Chọn sản phẩm --</option>
+                        <option value="coffee">Cà phê Buôn Ma Thuột</option>
+                        <option value="honey">Mật ong rừng Tây Nguyên</option>
+                        <option value="macadamia">Mắc ca Tây Nguyên</option>
+                        <option value="pepper">Tiêu Đắk Nông</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Nội dung liên hệ *</label>
+                    <textarea id="message" name="message" rows="5" required
+                        placeholder="Nhập nội dung cần hỗ trợ..."></textarea>
+                </div>
+
+                <button type="submit" class="btn">Gửi thông tin liên hệ</button>
+            </form>
+
+            <aside class="filter-sidebar">
+                <h2>Thông Tin Bổ Sung</h2>
+                <p><strong>Địa chỉ:</strong> TP. Buôn Ma Thuột, Tỉnh Đắk Lắk</p>
+                <p><strong>Hotline:</strong> 0900 000 000</p>
+                <p><strong>Email:</strong> lienhe@dacsantaynguyen.vn</p>
+                <p><strong>Giờ làm việc:</strong> 08:00 - 17:30 (Thứ 2 - Thứ 7)</p>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Dự án Đặc sản Tây Nguyên. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
